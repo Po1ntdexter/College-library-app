@@ -6,3 +6,5 @@ main()
 
 def library_card():
     l_card = input()
+
+hi = "hi"
