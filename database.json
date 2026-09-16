@@ -1,0 +1,10 @@
+{
+    "people": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "age": 30,
+            "email": "john@mail.com"
+        }
+    ]
+}
