@@ -1,4 +1,5 @@
 # Variables
+
 books_borrowed = 4
 books = [
     {"Book_1": "How to code"}, # examples
@@ -14,33 +15,22 @@ def main():
 
 main()
 
-class MyIndex:
-    def __init__(self, value):
-        self.value = value
-
-def __index__(self):
-    return self.value
-
 def student_logs():
     print("\n Checking your profile...")
 
-    
     num_of_books = len(books)
 
     if num_of_books > 0:
         print(f"\n You have {num_of_books} books borrowed")
-        for i, in range(books[0:num_of_books]):
-            idx = MyIndex(i)
-            book_name = books[idx]
-            print(f"\n Books: {str(book_name)}")
+        print("== My books ==")
+        for i, book in enumerate(books, start=1):
 
+            title = next(iter(book.values()))
+            print(f"[Book {i}] - {title}")
 
-def library_card():
-    l_card = input()
+input()
+student_logs()
 
-    student_logs()
-
-library_card()
 
 
 def read_barcode():
